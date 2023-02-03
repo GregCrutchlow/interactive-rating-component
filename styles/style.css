@@ -278,6 +278,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -363,4 +364,33 @@ html {
 .component-container button:focus {
   background-color: hsl(213deg, 19%, 18%);
   color: hsl(25deg, 97%, 53%);
+}
+
+.thank-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(ellipse at top, hsl(213deg, 19%, 18%), transparent);
+  width: 400px;
+  height: 400px;
+  border-radius: 25px;
+  padding: 35px;
+}
+.thank-you .selected-rating {
+  background: hsl(217deg, 10%, 25%);
+  height: 30px;
+  border-radius: 50px;
+}
+.thank-you p {
+  text-align: center;
 }
