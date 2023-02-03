@@ -278,7 +278,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -304,27 +303,22 @@ html {
           justify-content: center;
   background: hsl(217deg, 10%, 25%);
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
 }
-.component-container ul {
-  list-style: none;
+.component-container .number-rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
-.component-container li {
-  color: hsl(217deg, 12%, 63%);
+.component-container .number-rating label {
   background: hsl(217deg, 10%, 25%);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  padding-top: 5px;
+  width: 45px;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,17 +328,19 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  padding-top: 3px;
+  color: hsl(0deg, 0%, 100%);
 }
-.component-container li:hover {
-  background-color: hsl(213deg, 19%, 18%);
-  color: hsl(25deg, 97%, 53%);
+.component-container .number-rating label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
-.component-container li:focus {
-  background-color: hsl(213deg, 19%, 18%);
-  color: hsl(25deg, 97%, 53%);
+.component-container .number-rating label:hover {
+  background: hsl(217deg, 12%, 63%);
+}
+.component-container .number-rating label:focus {
+  background: hsl(217deg, 12%, 63%);
 }
 .component-container button {
   background: hsl(25deg, 97%, 53%);
@@ -358,11 +354,11 @@ html {
   transition: 0.3s ease-in-out;
 }
 .component-container button:hover {
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
 }
 .component-container button:focus {
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
 }
 
@@ -370,6 +366,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
